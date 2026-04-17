@@ -59,8 +59,6 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-
-  /* تحسين تحميل الصورة */
   background: #000 url("images/background.jpg") no-repeat center center;
   background-size: cover;
 }
@@ -136,19 +134,27 @@ section {
   text-align: center;
 }
 
-/* قسم المشاريع */
+/* =========================
+   PROJECTS
+========================= */
+
 .projects {
   background-color: #fff;
   padding: 100px 150px;
 }
 
-/* كرت المشروع */
-.project-card {
-  width: 100%;
-  max-width: 500px; /* حجم مناسب */
+.projects .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-/* صورة المشروع */
+.project-card {
+  width: 100%;
+  max-width: 500px;
+}
+
 .project-card img {
   width: 100%;
   height: 180px;
@@ -157,7 +163,6 @@ section {
   border-top-right-radius: 15px;
 }
 
-/* محتوى المشروع */
 .project-card .info {
   padding: 15px;
 }
@@ -173,7 +178,6 @@ section {
   margin-bottom: 10px;
 }
 
-/* زر */
 .project-card a {
   display: inline-block;
   margin-top: 10px;
@@ -185,25 +189,23 @@ section {
 .project-card a:hover {
   text-decoration: underline;
 }
-.projects .content {
-  display: flex;
-  flex-direction: column; /* هذا المهم */
-  align-items: center; /* يخليهم بالنص */
-  gap: 20px;
-}
-/* كروت */
-.content {
+
+/* =========================
+   CONTACT CARDS
+========================= */
+
+.cards .content {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  align-items: stretch; /* يخليهم نفس الطول */
+  align-items: stretch;
 }
 
 .card {
   background-color: #fff;
-  width: 300px; /* حجم ثابت */
-  height: 230px; /* نفس الارتفاع */
+  width: 300px;
+  height: 230px;
   box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
   border-radius: 15px;
   padding: 25px;
@@ -212,21 +214,19 @@ section {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* توزيع متساوي */
+  justify-content: space-between;
 }
 
 .card:hover {
   transform: translateY(-10px);
 }
 
-/* الأيقونة */
 .icon {
   color: #4e9eff;
   font-size: 3em;
   text-align: center;
 }
 
-/* النص */
 .info {
   text-align: center;
   display: flex;
@@ -244,7 +244,6 @@ section {
   margin: 0;
 }
 
-/* مهم عشان الإيميل ما يكبر الكرت */
 .info a {
   text-decoration: none;
   color: #333;
@@ -264,19 +263,59 @@ footer {
   color: #555;
 }
 
-/* موبايل */
+/* =========================
+   RESPONSIVE (الجوال)
+========================= */
+
 @media (max-width: 768px) {
   header {
-    padding: 15px 30px;
+    padding: 10px 20px;
     flex-direction: column;
+    gap: 10px;
+    text-align: center;
   }
 
   section,
-  .about-me {
-    padding: 70px 30px;
+  .about-me,
+  .projects {
+    padding: 70px 20px;
+  }
+
+  .navigation a {
+    margin-right: 10px;
+    font-size: 1em;
   }
 
   .main h2 span {
     font-size: 2em;
+  }
+
+  .main h3 {
+    font-size: 1.1em;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .cards .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .social-icons a {
+    font-size: 1.5em;
+    margin-left: 10px;
+  }
+
+  .about-me p {
+    font-size: 1.1em;
   }
 }
