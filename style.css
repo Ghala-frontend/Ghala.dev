@@ -1,291 +1,282 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* خط عربي أجمل */
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap");
 
 * {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  font-family: "Tajawal", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
+/* تحسين عام */
+body {
+  direction: rtl;
+  font-size: 18px;
+}
+
+/* الهيدر */
 header {
-    background-color: #f0f0f0;
-    width: 100%;
-    position: fixed;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 200px;
-    flex-wrap: wrap;
+  background-color: #ffffff;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 150px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    text-decoration: none;
-    color: blue;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.8em;
+  text-decoration: none;
+  color: #4e9eff;
+  font-weight: 800;
+  font-size: 2em;
 }
 
 .navigation a {
-    color: blue;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 500;
-    padding-left: 30px;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-right: 25px;
+  transition: 0.3s;
 }
 
 .navigation a:hover {
-    color: blueviolet;
+  color: #4e9eff;
 }
 
+/* السكاشن */
 section {
-    padding: 100px 200px;
+  padding: 100px 150px;
 }
 
+/* الصفحة الرئيسية */
 .main {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: url('images/background.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 100px 200px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  /* تحسين تحميل الصورة */
+  background: #000 url("images/background.jpg") no-repeat center center;
+  background-size: cover;
 }
 
+/* العناوين */
 .main h2 {
-    color: #fff;
-    font-size: 1.4em;
-    font-weight: 500;
+  color: #fff;
+  font-size: 1.8em;
 }
 
 .main h2 span {
-    display: inline-block;
-    margin-top: 10px;
-    color: #4e9eff;
-    font-size: 3em;
-    font-weight: 600;
+  display: block;
+  margin-top: 10px;
+  color: #4e9eff;
+  font-size: 3em;
+  font-weight: 800;
 }
 
 .main h3 {
-    color: #fff;
-    font-size: 1.4em;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+  color: #ddd;
+  font-size: 1.4em;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
+/* أيقونات */
 .social-icons a {
-    color: black;
-    font-size: 1.7em;
-    padding-right: 50px;
+  color: white;
+  font-size: 1.8em;
+  margin-left: 20px;
+  transition: 0.3s;
 }
 
+.social-icons a:hover {
+  color: #4e9eff;
+}
+
+/* عنوان الأقسام */
 .title {
-    display: flex;
-    justify-content: center;
-    color: #4e9eff;
-    font-size: 2.2em;
-    font-weight: 800;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  color: #4e9eff;
+  font-size: 2.5em;
+  font-weight: 800;
+  margin-bottom: 40px;
 }
 
-.content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
+/* عني */
 .about-me {
-    padding: 100px 200px;
-    background-color: #f9f9f9;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 150px;
 }
 
 .about-me div {
-    max-width: 800px;
+  max-width: 800px;
 }
 
 .about-me h2 {
-    font-size: 2.5em;
-    color: #4e9eff;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 2.5em;
+  color: #4e9eff;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .about-me p {
-    font-size: 1.2em;
-    color: #333;
-    line-height: 1.8;
-    text-align: center;
+  font-size: 1.3em;
+  color: #444;
+  line-height: 2;
+  text-align: center;
+}
+
+/* قسم المشاريع */
+.projects {
+  background-color: #fff;
+  padding: 100px 150px;
+}
+
+/* كرت المشروع */
+.project-card {
+  width: 100%;
+  max-width: 500px; /* حجم مناسب */
+}
+
+/* صورة المشروع */
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* محتوى المشروع */
+.project-card .info {
+  padding: 15px;
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* زر */
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #4e9eff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+.projects .content {
+  display: flex;
+  flex-direction: column; /* هذا المهم */
+  align-items: center; /* يخليهم بالنص */
+  gap: 20px;
+}
+/* كروت */
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: stretch; /* يخليهم نفس الطول */
 }
 
 .card {
-    background-color: #fff;
-    width: 100%;
-    max-width: 400px;
-    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
-    border-radius: 10px;
-    padding: 25px;
-    margin: 15px;
-    transition: 0.7s ease;
+  background-color: #fff;
+  width: 300px; /* حجم ثابت */
+  height: 230px; /* نفس الارتفاع */
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
+  border-radius: 15px;
+  padding: 25px;
+  margin: 10px;
+  transition: 0.4s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* توزيع متساوي */
 }
 
 .card:hover {
-    transform: scale(1.05);
+  transform: translateY(-10px);
 }
 
+/* الأيقونة */
 .icon {
-    color: #4e9eff;
-    font-size: 3em;
-    text-align: center;
+  color: #4e9eff;
+  font-size: 3em;
+  text-align: center;
 }
 
+/* النص */
 .info {
-    color: black;
-    text-align: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
 }
 
 .info h3 {
-    color: black;
-    font-size: 1.2em;
-    font-weight: 700;
-    margin: 10px;
+  font-size: 1.3em;
+  margin: 10px 0;
 }
 
+.info p {
+  margin: 0;
+}
+
+/* مهم عشان الإيميل ما يكبر الكرت */
 .info a {
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.05em;
+  word-break: break-all;
 }
 
 .info a:hover {
-    color: #4e9eff;
+  color: #4e9eff;
 }
 
+/* الفوتر */
 footer {
-    background-color: #f2f2f2;
-    text-align: center;
-    padding: 15px;
-    color: #444;
-    font-size: 0.9em;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+  color: #555;
 }
 
-/* ========== Media Queries ========== */
-
-@media (max-width: 1024px) {
-    header {
-        padding: 10px 100px;
-    }
-
-    section,
-    .main,
-    .about-me {
-        padding: 100px;
-    }
-}
-
+/* موبايل */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        padding: 10px 40px;
-        text-align: center;
-    }
+  header {
+    padding: 15px 30px;
+    flex-direction: column;
+  }
 
-    .navigation {
-        margin-top: 10px;
-    }
+  section,
+  .about-me {
+    padding: 70px 30px;
+  }
 
-    section,
-    .main,
-    .about-me {
-        padding: 70px 40px;
-    }
-
-    .main h2 span {
-        font-size: 2em;
-    }
-
-    .main h3 {
-        font-size: 1.1em;
-    }
-
-    .social-icons a {
-        font-size: 1.5em;
-        padding-right: 30px;
-    }
-
-    .about-me h2 {
-        font-size: 2em;
-    }
-
-    .about-me p {
-        font-size: 1em;
-    }
-}
-
-@media (max-width: 480px) {
-    .main h2 {
-        font-size: 1.2em;
-    }
-
-    .main h2 span {
-        font-size: 1.6em;
-    }
-
-    .main h3 {
-        font-size: 1em;
-    }
-
-    .logo {
-        font-size: 1.5em;
-    }
-
-    .navigation a {
-        font-size: 1em;
-        padding-left: 15px;
-    }
-
-    .social-icons a {
-        font-size: 1.2em;
-        padding-right: 15px;
-    }
-
-    .title {
-        font-size: 1.5em;
-    }
-
-    .card {
-        padding: 20px;
-        margin: 10px;
-    }
-
-    .icon {
-        font-size: 2.5em;
-    }
-
-    .info h3 {
-        font-size: 1em;
-    }
-
-    .about-me h2 {
-        font-size: 1.5em;
-    }
-
-    .about-me p {
-        font-size: 0.95em;
-    }
-
-    footer {
-        font-size: 0.8em;
-    }
+  .main h2 span {
+    font-size: 2em;
+  }
 }

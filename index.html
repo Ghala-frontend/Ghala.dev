@@ -1,66 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>My Website</title>
-</head>
-<body>
-    <header> 
-        <a href="#" class="logo">GHALA</a>
-        <nav class="navigation">
-            <a href="#about-me">About me</a>
-            <a href="https://github.com/Ghala-frontend">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>موقعي الشخصي</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">غلا</a>
+      <nav class="navigation">
+        <a href="#about-me">نبذة عني</a>
+        <a href="#projects">أعمالي</a>
+        <a href="#contact">تواصل معي</a>
+      </nav>
     </header>
-    <section class="main">
-        <div>
-            <h2>Hello, I'm Ghala Mohammed<br>
-                <span>Front-End Developer</span></h2>
-            <h3>Building responsive websites with HTML, CSS</h3>
-            
-            <div class="social-icons">
-                <a href="https://github.com/Ghala-frontend"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/ghala-mohammed-3b3570289/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="http://wa.me/966545040886"><i class="fa-brands fa-square-whatsapp"></i></a>
-            </div>
-        </div>
-    </section>
-    <section class="about-me" id="about-me">
-    <div>
-      <h2>About Me</h2>
-      <p>
-I holds a Bachelor's degree in Information Technology and Computing, specializing in Web Development,
- from the Arab Open University. My hands-on experience includes a cooperative training program at the Saudi High Institute .
- I am currently seeking a professional 
-opportunity where I can grow, add value, and be part of innovative web solutions that make a difference.
-</p>
 
-    </div>
+    <section class="main">
+      <div>
+        <h2>
+          مرحباً، أنا غلا محمد<br />
+          <span>مطورة واجهات أمامية</span>
+        </h2>
+        <h3>أقوم ببناء مواقع متجاوبة باستخدام HTML و CSS</h3>
+
+        <div class="social-icons">
+          <a href="https://github.com/Ghala-frontend"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/ghala-mohammed-3b3570289/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="http://wa.me/966545040886"
+            ><i class="fa-brands fa-square-whatsapp"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-me" id="about-me">
+      <div>
+        <h2>نبذة عني</h2>
+        <p>
+          حاصلة على درجة البكالوريوس في تقنية المعلومات والحوسبة، تخصص تطوير
+          الويب، من الجامعة العربية المفتوحة. لدي خبرة عملية من خلال برنامج
+          التدريب التعاوني في المعهد العالي السعودي. أسعى حالياً للحصول على فرصة
+          مهنية أطور من خلالها مهاراتي، وأقدم قيمة حقيقية، وأكون جزءاً من حلول
+          ويب مبتكرة تُحدث فرقاً.
+        </p>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <h2 class="title">أعمالي</h2>
+
+      <div class="content">
+        <!-- المشروع 1 -->
+        <div class="card project-card">
+          <img src="images/project1.jpg" alt="متجر تقني" />
+          <div class="info">
+            <h3>متجر تقني</h3>
+            <p>
+              متجر إلكتروني لبيع منتجات السوفتوير والهاردوير مع تصنيفات وسلة
+              شراء سهلة الاستخدام.
+            </p>
+            <a
+              href="https://ghala-frontend.github.io/TechMart-online-shop/"
+              target="_blank"
+            >
+              عرض الموقع
+            </a>
+          </div>
+        </div>
+
+        <!-- المشروع 2 (مثال جاهز لك) -->
+        <div class="card project-card">
+          <img src="images/project2.jpg" alt="مشروع آخر" />
+          <div class="info">
+            <h3>موقع شخصي</h3>
+            <p>
+              موقع تعريفي بسيط يعرض معلوماتي وأعمالي باستخدام تصميم حديث
+              ومتجاوب.
+            </p>
+            <a href="#" target="_blank"> عرض الموقع </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="cards" id="contact">
-    <h2 class="title">Let's work together</h2>
-    <div class="content">
-        <div class="card">
-            <div class="icon">
-                <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="info">
-                <h3>email</h3>
-                <p>
-                    <a href="mailto:Ghala3@icloud.com">Ghala3@icloud.com</a>
-                </p>
-            </div>
-        </div>
-    </div>
-    </section>
-    <footer>
-  <p>© 2025 Ghala. All rights reserved.</p>
-    </footer>
+      <h2 class="title">لنعمل معاً</h2>
 
-</body>
+      <div class="content">
+        <!-- الكرت الأول -->
+        <div class="card">
+          <div class="icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="info">
+            <h3>البريد الإلكتروني</h3>
+            <p>
+              <a href="mailto:Ghala3@icloud.com">Ghala3@icloud.com</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- الكرت الثاني -->
+        <div class="card">
+          <div class="icon">
+            <i class="fa-brands fa-square-whatsapp"></i>
+          </div>
+          <div class="info">
+            <h3>واتساب</h3>
+            <p>
+              <a href="https://wa.me/966545040886">0545040886</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 غلا. جميع الحقوق محفوظة.</p>
+    </footer>
+  </body>
 </html>
